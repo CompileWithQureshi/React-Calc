@@ -9,6 +9,7 @@
   margin: 2px;
   padding: 2px;
   border: 2px solid black;
+  border-radius: 5px;
 }
 /*display css*/
 .display {
@@ -19,6 +20,8 @@
   display: flex;
   justify-content: end;
   align-items: flex-end;
+  border-radius: 5px;
+  margin: 0 0 0 5px 0;
 }
 /*container*/
 .container {
@@ -27,6 +30,7 @@
   grid-gap: 10px;
   background-color: #9ccaf0;
   padding: 10px;
+  border-radius: 5px;
 }
 /*big button*/
 .bg-btn {

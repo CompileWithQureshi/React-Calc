@@ -13,6 +13,9 @@ function App() {
   const handeltotal = e => {
     setResult(eval(result))
   }
+  const handelDelete = e => {
+    setResult(result.slice(0, -1))
+  }
   return (
     <div className='App'>
       <div className='calculator'>
@@ -20,6 +23,8 @@ function App() {
         <div className='display' onChange={() => setResult()}>{result}</div>
         <div className='container'>
           <button name='C' onClick={handelClear} className='bg-btn'>C</button>
+          <button name='DEL' onClick={handelDelete} className='bg-btn'>DEL</button>
+
           <button name='/' onClick={handelClick} >/</button>
           <button name='%' onClick={handelClick} className='bg-btn'>%</button>
           <button name='*' onClick={handelClick} className='bg-btn'>x</button>
