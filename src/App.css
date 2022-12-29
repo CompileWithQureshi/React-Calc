@@ -4,19 +4,32 @@
   justify-items: center;
   align-items: center;
 }
+/*parent container*/
 .calculator {
   margin: 2px;
   padding: 2px;
   border: 2px solid black;
 }
+/*display css*/
 .display {
   height: 10vh;
   background-color: black;
+  color: #9ccaf0;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
 }
+/*container*/
 .container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
   background-color: #9ccaf0;
   padding: 10px;
+}
+/*big button*/
+.bg-btn {
+  width: 50px;
+  font-weight: bold;
 }
